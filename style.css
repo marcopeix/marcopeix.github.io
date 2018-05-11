@@ -1,6 +1,58 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  background: -moz-linear-gradient(45deg, #fbff32 0%, #ffdc30 28%, #ffaa00 65%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #fbff32 0%, #ffdc30 28%, #ffaa00 65%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #fbff32 0%, #ffdc30 28%, #ffaa00 65%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbff32', endColorstr='#ffaa00', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20%;
+  margin-bottom: 4em;
+}
+
+.header img {
+  margin-top: 50px;
+  margin-right: 3em;
+}
+
+.header .text h1 {
+  font-size: 50px;
+}
+
+.header .text p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.header .text button {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.header .text button:hover {
+  background-color: black;
+  color: white;
 }
 
 #example {
@@ -8,4 +60,8 @@ body {
   background: #ff0000;
   color: white;
   font-size: 36px;
+}
+
+input {
+  margin: 4em 50%;
 }
